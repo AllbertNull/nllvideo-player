@@ -1,0 +1,77 @@
+.Nll_video_aside {
+	display: block;
+	overflow: hidden;
+	contain: content;
+	color: var(--Nll_secondary-color);
+	font-family: var(--Roboto);
+} .Nll_description {
+	max-width: 24.8rem;
+	margin-top: 2.4rem;
+}
+
+.Nll_video_info .Nll_titlevideo {
+	color: var(--Nll_primary-color);
+	font-family: var(--Shippori);
+	font-size: 2.8rem;
+	line-height: 3.2rem;
+	font-weight: 400;
+} .Nll_titlevideo {
+	padding: 0 0.5rem;
+	display: inline-block;
+	transform: var(--fixShipori);
+	background: var(--Nll_secondary-color);
+}
+
+.Nll_videodate {
+	display: block;
+	font-size: 1.2rem;
+	line-height: 1.2rem;
+	font-family: var(--Roboto);
+}
+
+.Nll_description span {
+	display: inline-block;
+	color: var(--Nll_secondary-color);
+	font-family: var(--Roboto);
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	font-weight: var(--SemiBold_F);
+	vertical-align: top;
+} .Nll_description #NLL_link {
+	display: -webkit-box;
+} .Nll_description #NLL_link a[href]:not(.Nll_clamp) {
+	padding: 0.4rem;
+	display: -webkit-box;
+	transition: color var(--Nll_SCubic-Bezier);
+	position: relative;
+	& img {
+		vertical-align: top;
+	} &::before {
+		content: '';
+		position: absolute;
+		width: 20px;
+		height: 100%;
+		height: -webkit-fill-available;
+		padding-inline-end: 2px;
+		border-radius: 50px;
+		left: 0;
+		top: 0;
+		z-index: -99;
+		transition: width var(--Nll_SCubic-Bezier), background var(--Nll_SCubic-Bezier);
+		background: var(--Nll_primary-color);
+	} &:hover {
+		color: var(--Nll_primary-color);
+	}&:hover::before {
+		width: 100%;
+		background: var(--Nll_secondary-color);
+	}
+}
+
+.Nll_description a {
+	color: inherit;
+	font-family: var(--Roboto);
+	text-decoration: none;
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	font-weight: 400;
+}

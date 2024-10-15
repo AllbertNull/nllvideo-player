@@ -1,0 +1,29 @@
+/* FOOTER */
+footer {
+	position: fixed;
+	bottom: 24px;
+	right: 12px;
+}
+
+.Nll_col_palette {
+	display: flex;
+	justify-content: flex-end;
+	margin-block-end: 5px;
+}
+
+.Nll_dark_col, .Nll_light_col, .Nll_main_col {
+	width: 24px;
+	height: 24px;
+}
+
+.Nll_dark_col { background-color: #0E0E0F; }
+.Nll_light_col { background-color: #EEEEFF; }
+.Nll_main_col { background-color: #590FF6; }
+
+.Nll_p {
+	color: var(--Nll_secondary-color);
+	letter-spacing: 0.25px;
+	font-family: var(--Shippori);
+	font-weight: var(--Regular_F);
+	font-size: 8px;
+}

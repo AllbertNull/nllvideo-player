@@ -1,0 +1,42 @@
+header {
+	width: 100%;
+	background: var(--Nll_primary-color);
+	padding-block: 1.2rem;
+}
+
+.header_Cont {
+	display: flex;
+	justify-content: center;
+	margin-inline: 2.4rem;
+}
+
+.logo_btn {
+	display: inline-block;
+	padding: 0.6rem;
+	color: hsla(240, 100%, 96.67%, 1);
+	text-decoration: none;
+	position: relative;
+}
+
+.logo_btn > svg {
+	width: 3.2rem;
+	height: 3.2rem;
+	fill: var(--Nll_secondary-color);
+}
+
+.beta {
+	background-color: var(--Nll_Accent_Color);
+	position: absolute;
+	top: 2px; right: -2px;
+	font-size: 10px;
+	line-height: 10px;
+	margin-block-start: -1px;
+	font-family: var(--NotoSJP);
+	font-weight: var(--SemiBold_F);
+	padding: 0 2px;
+	padding-block-end: 1px;
+	overflow: hidden;
+	transform: rotate(12deg);
+	pointer-events: none;
+	user-select: none;
+}
